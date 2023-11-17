@@ -43,22 +43,29 @@
         <fieldset>
           <!-- Text input-first নাম -->
 
-          <div class="form-group">
+        <div class="form-group">
             <label class="col-md-4 control-label">শ্রেণী</label>
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
-                <span class="input-group-addon"><i
-                    class="glyphicon glyphicon-user"
-                  ></i></span>
-                <input
-                  name="classNo"
-                  placeholder="শ্রেণী নম্বর এন্টি করুন"
+                <span class="input-group-addon"
+                  ><i class="glyphicon glyphicon-user"></i
+                ></span>
+                <select id="color" name="classNo"
+                  placeholder="শ্রেণী নাম"
                   class="form-control"
-                  type="text"
-                  required
-                />
+                  type="select">
+                  <option value="" disabled selected> শ্রেণী নির্বাচন করুন</option>
+                   <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="4">5</option>
+          
+        </select>
               </div>
             </div>
+
+      
           </div>
 
           <div class="form-group">
@@ -181,7 +188,7 @@
             <div class="col-md-4 inputGroupContainer">
               <div class="input-group">
                 <span class="input-group-addon"><i
-                    class="glyphicon glyphicon-হোমপেজ"
+                    class="glyphicon glyphicon-home"
                   ></i></span>
                 <input
                   name="address"
